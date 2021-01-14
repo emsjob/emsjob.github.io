@@ -12,12 +12,154 @@ body {
 	margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+h1 {
+	text-align: center;
+	padding: 1em;
+	/*font-family: 'Cinzel', serif;*/
+	font-family: 'Philosopher', sans-serif;
+	/*font-family: 'Asul', sans-serif;*/
+	color: #262626;
+	font-size: 7em;
+	font-weight: lighter;
+	color: yellow;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+.start a {
+	text-decoration: none;
+	color: black;
+	/*font-family: 'Asul', sans-serif;*/
+	font-family: 'Philosopher', sans-serif;
+	font-size: 2em;
+}
+
+.start a:hover {
+	text-decoration: underline;
+}
+
+.works a {
+	margin-left: 6em;
+	float: left;
+	color: yellow;
+}
+
+.about a {
+	margin-right: 4em;
+	float: right;
+	color: yellow;
+}
+
+.start {
+	height: 100%;
+	background-image: url('imglibrary/heda.jpeg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#works {
+	height: 100%;
+	background-image: url('imglibrary/heda (kopia).jpeg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#about {
+	height: 100%;
+	background-image: url('imglibrary/heda (kopia).jpeg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#works h2 {
+	/*font-family: 'Asul', sans-serif;*/
+	font-family: 'Philosopher', sans-serif;
+	color: white;
+	font-size: 4em;
+	padding: 0.5em 0.5em 0.5em 1em;
+}
+
+#about h2 {
+	font-family: 'Philosopher', sans-serif;
+	/*font-family: 'Asul', sans-serif;*/
+	color: white;
+	font-size: 4em;
+	padding: 0.5em 0.5em 0.5em 1em;
+}
+
+#about h3 {
+	font-family: 'Asul', sans-serif;
+	font-size: 3em;
+	padding-left: 1.5em;
+}
+
+#about p {
+	font-family: 'Asul', sans-serif;
+	color: white;
+	font-size: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 25em; 
+	margin: 1em;
+}
+
+#about a {
+	color: white;
+}
+
+#about a:hover {
+	color: grey;
+}
+
+.photos {
+	overflow: auto;
+	white-space: nowrap;
+	margin-left: 2em;
+}
+
+.img-show {
+	width: 30%;
+	padding: 0.5em;
+}
+
+/*
+.btn {
+	position: absolute;
+	font-family: 'Asul', sans-serif;
+	top: 90%;
+	border: none;
+	z-index: 99;
+	outline: none;
+	cursor: pointer;
+	background-color: white;
+}
+
+.btn:hover {
+	text-decoration: underline;
+}
+*/
+/*
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
 
  @font-face {
     font-family: "Computer Modern";
     src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
   }
+
+  @font-face {
+  	font-family:GerstnerProgrammFSL-Light;
+  	src: url(data:application/vnd.ms-fontobject);
 
 .fadeIn {
 	-webkit-animation: animat_show 0.8s;
@@ -32,13 +174,17 @@ body {
 
 .start {
 	height: 100%;
-	background-image: url("imglibrary/Trono9.jpeg");
+	background-image: url("imglibrary/paris2.jpg");
 	background-attachment: fixed;
-	background-position: center;
+	background-position: 55% 40%;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	text-decoration: none;
 }
 
 .name {
@@ -47,132 +193,50 @@ body {
 	font-family: 'Asul', sans-serif;
 }
 
-.show-more {
-	position: absolute;
-	right: 50%;
-	bottom: 10%;
-	transform: scale(5);
+.text-link {
+	padding-left: 1em;
+	color: white;
+	font-family: 'Asul', sans-serif;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+.text-link:hover {
+	color: grey;
+}
+
+.work-link {
+	right: 20%;
+	width: 42%;
+	padding-right: 10em;
+	left: 20%;
+
+}
+
+.img-link {
+	position: relative;
+	size: 2em;
+	width: 13%;
+	height: auto;
+	padding: 0;
+	margin-left: 34.9%;
+	margin-top: 14%;
+	border: 0.5em solid yellow;
+}
+
+.img-link:hover {
+	opacity: 0.5;
+	background-color: black;
+}
+
+.work-wrap:hover {
+	opacity: 0.5;
+	background-color: black;
 }
 
 
 h1 {
 	font-size: 1.2em;
 }
+*/
 
-.arrow {
-	border: solid grey;
-	display: inline-block;
-	border-width: 0 1px 1px 0;
-	padding: 4px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-}
-
-.arrow:hover {
-	border: solid white;
-	display: inline-block;
-	border-width: 0 1px 1px 0;
-	padding: 4px;
-	transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-}
-
-.menu {
-	margin: 1em;
-	font-size: 1.2em;
-	position: sticky;
-	top: 1em;
-	left: 0;
-	font-family: 'Asul', sans-serif;
-	font-weight: lighter;
-}
-
-.menu  ul{
-	font-family: 'Asul', sans-serif;
-	padding: 0;
-	margin-right: 90%;
-}
-
-.btn {
-	display: none;
-	position: fixed;
-	font-family: 'Asul', sans-serif;
-	top: 90%;
-	border: none;
-	z-index: 99;
-	outline: none;
-	cursor: pointer;
-	background-color: white;
-}
-
-.btn:hover {
-	text-decoration: underline;
-}
-
-.archive a, a:visited {
-	color: grey;
-	display: block;
-	text-decoration: none;
-	margin-top: 0.2em;
-}
-
-.archive a:hover {
-	color: black;
-}
-
-.img_content {
-	margin-top: 0;
-	text-align: center;
-	font-family: 'Asul', sans-serif;
-	color: grey;
-	/*visibility: hidden;*/
-}
-
-.img_content p {
-	padding-top: 1em;
-}
-
-img {
-	width: 42%;
-	padding: 1em 5em 1em 5em;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-.img_content h4 {
-	text-align: left;
-	text-decoration: none;
-	padding-left: 29%;
-	margin-top: 0;
-}
-
-.link {
-	text-decoration: none;
-	color: grey;
-}
-
-.link:hover {
-	color: black;
-}
-
-.img_link:hover {
-	opacity: 0.75;
-}
-
-.back {
-	border: none;
-	position: absolute;
-	top: 6.2%;
-	left: 1%;
-	font-family: 'Asul', sans-serif;
-	color: grey;
-	cursor: pointer;
-	background-color: white;
-	font-size: 1.2em;
-}
-
-.back:hover {
-	color: black;
-}
