@@ -10,7 +10,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background-color: #1D1A1B;
+  background-color: black;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
