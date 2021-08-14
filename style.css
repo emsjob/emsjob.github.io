@@ -258,6 +258,7 @@ h1 {
   font-size: 7vmin;
   letter-spacing: 0.1vmin;
   color: #E5E5E5;
+  background-color: black;
 }
 
 .underline {
@@ -271,6 +272,7 @@ h1 {
   font-size: 3vmin;
   letter-spacing: 0.1vmin;
   color: #E5E5E5;
+  background-color: black;
 }
 
 .modal {
@@ -325,6 +327,7 @@ h1 {
 
 .backimg {
   width: 100%;
+  background-color: black;
 }
 
 .backimg img {
