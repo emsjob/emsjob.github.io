@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #1D1A1B;
+  background-color: black;
 }
 
 h1 {
@@ -128,7 +128,7 @@ h1 {
 #works {
   padding: 6em;
   /*height: 100%;*/
-  background-color: #1D1A1B;
+  background-color: black;
   color: #E5E5E5;
   background-image: url('aboutback.png');
   background-position: center;
@@ -403,7 +403,7 @@ h1 {
 
 #design {
   /*height: 100%;*/
-  background-color: #1D1A1B;
+  background-color: black;
   color: #E5E5E5;
   padding: 0 6em 4em 6em;
   background-image: url('backg1.png');
@@ -464,7 +464,7 @@ h1 {
 
 #about {
   height: 100%;
-  background-color: #1D1A1B;
+  background-color: black;
   color: #E5E5E5;
   padding: 2em 6em 4em 6em;
   background-image: url('aboutback.png');
