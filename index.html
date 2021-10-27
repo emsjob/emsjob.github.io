@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Emil Sjöberg</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -63,6 +64,13 @@
 	<div id="works">
 		<h1>ARTWORKS</h1>
 		<div class="gridcontainer">
+
+		<div class="gridworks" id="sculpture">
+			<a href="artgen.html">
+				<img src="img32.png">
+				
+			</a>
+		</div>
 	
 		<div class="gridworks">
 			<a href="lightning.html" id="lightning">
@@ -75,12 +83,23 @@
 				<img src="yr2.png">
 			</a>
 		</div>
+
+		<div class="gridworks_p">
+			<a href="artgen.html">ArtGen Excerpts</a>
+		</div>
 		<div class="gridworks_p">
 			<a href="lightning.html">Dusk series</a>
 		</div>
 		<div class="gridworks_p">
 			<a href="artefact.html">Flammable series</a>
 		</div>
+
+		<div class="gridworks">
+			<a href="still_life.html" id="lightning">
+				<img src="still1.png">
+			</a>
+		</div>
+
 		<div class="gridworks">
 			<a href="nature.html" id="lightning">
 				<img src="forest7.png">
@@ -91,6 +110,9 @@
 				<img src="culptback3.png">
 				
 			</a>
+		</div>
+		<div class="gridworks_p">
+			<a href="still_life.html">Still life series</a>
 		</div>
 		<div class="gridworks_p">
 			<a href="nature.html">Nature series</a>
@@ -112,14 +134,17 @@
 		<h1>DESIGN</h1>
 		<div class="gridcontainer3">
 
-		<div class="gridworks3" id="bandcamplink">
+		<div class="gridworks3">
 			<a href="bandcamp.html">
 				<img src="vectary.png">
 				<p>Bandcamp Redesign</p>
 			</a>
 		</div>
 		<div class="gridworks3">
-			<p>Work in progress...</p>
+			<a href="physical.html">
+				<img src="physback2.png">
+				<p>Interactive Art Generator</p>
+			</a>
 		</div>
 		<div>
 			
@@ -152,6 +177,19 @@
 		</div>
 	</div>
 
+<script type="text/javascript">
+$(document).ready(function () {
+
+    if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+        $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+    }
+
+    $(window).on("scroll", function() {
+        localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+    });
+
+  });
+</script>
 
 </body>
 </html>

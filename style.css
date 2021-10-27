@@ -162,7 +162,6 @@ h1 {
   background: #eee;
   padding: 1em;
 }
-
 .grid > div:nth-child(odd) {
   background: #ddd;
 }
@@ -191,7 +190,7 @@ h1 {
   .gridcontainer {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 0.5fr 3fr 0.5fr;
     grid-column-gap: 6em;
     grid-row-gap: 1em 2em;
@@ -213,7 +212,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 0 2em 0; 
+  padding: 0 0 2.5em 0; 
 }
 
 .gridworks img {
@@ -325,12 +324,13 @@ h1 {
   width: 100%;
 }
 
+
 .gridworks2 img {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: zoom-in;
+  /*cursor: zoom-in;*/
 }
 
 .headline {
@@ -358,6 +358,18 @@ h1 {
   letter-spacing: 0.1vmin;
   color: #E5E5E5;
   /*background-color: black;*/
+}
+
+.underline a {
+  text-decoration: none;
+  color: #E5E5E5;
+  font-style: italic;
+}
+
+.underline a:hover {
+  text-decoration: underline;
+  color: #E5E5E5;
+  font-style: italic;
 }
 
 .modal {
@@ -416,6 +428,13 @@ h1 {
 
 .backimg img {
   width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backimg iframe {
+  width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -480,13 +499,17 @@ h1 {
   margin: auto;
 }
 
-.slidefade {
+.slide {
   display: none;
+}
+
+.fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
 
 #design {
   /*height: 100%;*/
@@ -508,13 +531,15 @@ h1 {
   padding: 4em 0 4em 0;
   grid-column-gap: 14em;
 }
-
+/*
 .gridcontainer3 {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 2em;
 }
+*/
+
 
 @media only screen and (min-width: 700px) {
   .gridcontainer3 {
@@ -533,6 +558,8 @@ h1 {
   box-shadow: 0 0 5em 1em #BA4300;
   padding: 2em;
   position: relative;
+  /*display: flex;*/
+  flex-direction: column;
 }
 
 .gridworks3 p {
@@ -543,6 +570,8 @@ h1 {
   font-weight: lighter;
   font-size: 3vmin;
   color: #E5E5E5;
+  float: bottom;
+  margin-top: auto;
 }
 
 .gridworks3 a {
@@ -552,6 +581,12 @@ h1 {
 .gridworks3 a:hover {
   opacity: 0.75;
   text-decoration: underline #E5E5E5;
+}
+
+.gridworks3 img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
 }
 
 #bandcamplink {
