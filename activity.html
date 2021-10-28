@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Emil Sjöberg</title>
+	<link rel="icon" href="Untitled4.png" type="image/icon type">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color:  #1D1A1B;">
+	<div class="headline">Activision</div>
+	<div class="underline">This is a conceptual design prospect made for the 
+purpose of exploring the possibility of visualizing everyday actions.</div>
+	<div class="underline">My role - Concept, UX/UI design</div>
+	<div class="backimg"><img src="activstart.png"></div>
+	<div class="bandcampcont">
+
+	<div class="gridworks2">
+		<img src="activback.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Background</div>
+		<p>Today, everything we do is being monitored, often with corresponding numbers to represent our actions. For example the number of steps taken per day is measured with a specific number, where the infamous 10,000 steps mark is well known.</p>
+		<p>What if we, instead of using numbers to represent our actions, use visualization to show us what kind of actions we've taken part of as of lately?</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="activ1.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Conceptual design</div>
+		<p>The actions I'd like to focus on are actions that are important to everyday life. Such as, movement and energy consumption.</p>
+		<p>Each type of action would correspond to a specific form of visualization and how it would be realized would be directly decided by the everyday actions done by the user.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="activ2.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Action mapping</div>
+		<p>One challenge is how to map a form of action to a visualization and how it would change depending on the amount of the action.</p>
+		<p>To make the visualizations interesting is crucial to the outcome of the design.</p>
+		<p>I decided to let colors and activity on the screen correspond to changes in action.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="activ3.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Movement</div>
+		<p>The movements would be visualized using colors ranging from darker, representing little movement, to lighter, representing a lot of movement.</p>
+		<p>The amount of movemement would also be represented by the amount of randomized dots drawn on the screen.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="activ4.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Energy consumption</div>
+		<p>The Energy consumption would also be visualized using colors but this time ranging from green, representing low energy consumption, to red, representing high energy consumption.</p>
+		<p>The number of dots on the screen would here correspond to the amount of energy consumption from the user.</p>
+	</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("slidefade");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 2500); // Change image every 2 seconds
+		}
+	</script>
+</body>
+</html>

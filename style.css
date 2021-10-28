@@ -529,7 +529,7 @@ h1 {
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr 0.5fr;
   padding: 4em 0 4em 0;
-  grid-column-gap: 14em;
+  grid-column-gap: 4em;
 }
 /*
 .gridcontainer3 {
@@ -545,10 +545,10 @@ h1 {
   .gridcontainer3 {
     height: 100%;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     grid-template-rows: 1fr 0.5fr;
     padding: 4em 0 4em 0;
-    grid-column-gap: 14em;
+    grid-column-gap: 8em;
   }
 
 }
