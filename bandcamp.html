@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Emil Sjöberg</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color:  #1D1A1B;">
+	<div class="headline">Bandcamp Redesign</div>
+	<div class="underline">Bandcamp is a music platform with an interesting and worthy mission. They want to create the best possible service for artists and labels to share and earn money from their music, and for fans to discover and enjoy it.</div>
+	<div class="underline">My role - User research, UX/UI design</div>
+	<div class="backimg"><img src="images/framestart.png"></div>
+	<div class="bandcampcont">
+
+	<div class="gridworks2">
+		<img src="images/backgrou.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">About the project</div>
+		<p>This project was made as a part of the course Interaction Design methods at KTH Royal Institute of Technology. It was done during a 10-week period of time and was centered around the improvement of an existing music application based on a specific user group.</p>
+		<p>I was part of a team of four students with equal responsibilty on how the project would realize. I was very much involved in every step of the process and gained a lot of experience in every step of the design process.</p>
+	</div>
+
+	<div class="gridworks2">
+		<div class="slideshow">
+			<div class="slidefade">
+				<img src="images/process1.png">
+			</div>
+			<div class="slidefade">
+				<img src="images/process2.png">
+			</div>
+			<div class="slidefade">
+				<img src="images/process3.png">
+			</div>
+		
+		</div>
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Design process</div>
+		<p>We followed a user-centered design process to figure out how the system could be better aligned with user goals, becom more pleasureable to use and harness the power of its medium better.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="images/research.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Research</div>
+		<p>We conducted user and market research to drive our planning phase. This helped us find key insights that defined our path moving forward.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="images/screengif6.gif" loop="0">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Challenges</div>
+		<p>When researching Bandcamp we found that young people doesn’t use Bandcamp that much. This made us want to focus on Generation Z as a user group.</p>
+		<p>We also found that Bandcamp users rarely discover any music on the platform. Instead, they find music elsewere and purchases the music from Bandcamp.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="images/screens1.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Solutions</div>
+		<p>We were able to merge two ideas from two different methods into one feature.</p>
+		<p>How might we emulate the feeling of getting a tape from a friend?</p>
+		<p>+</p>
+		<p>Sending out physical tapes to users with music recommendations.</p>
+		<p>=</p>
+		<p>A feature where you can send and receive tapes digitally.</p>
+	</div>
+
+	<div class="gridworks2">
+		<img src="images/screens2.png">
+	</div>
+
+	<div class="gridworks2">
+		<div class="headline2">Reflections</div>
+		<p>This was a very educative design process. However, everything rarely goes as planned and flexibility in regards to the design process was needed. Some important takeaways from the project were; the importance of using predecided methods,
+		crafting a design that aligns with a company’s values,
+		realizing that design isn't an optimization problem and
+		using interactivity as a destination rather than only as a means to an end.</p>
+	</div>
+
+	</div>
+
+	<script type="text/javascript">
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("slidefade");
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 2500); // Change image every 2 seconds
+		}
+	</script>
+</body>
+</html>
