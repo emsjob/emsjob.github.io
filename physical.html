@@ -150,32 +150,28 @@ Link to paper: <a href="https://docs.google.com/document/d/1gUnEEgdGFZre4opY-tiX
 	</div>
 
 	<script type="text/javascript">
-		//var slideIndex = [0, 0, 0, 0];
-		//var slideId = ["slidefade1", "slidefade2", "slidefade3", "slidefade4"];
-		var slideContainers = document.getElementsByClassName("slideshow")
-		//showSlides(1, 0);
-		//showSlides(1, 1);
-		//showSlides(1, 2);
-		//showSlides(1, 3);
+		const slideContainers = document.getElementsByClassName("slideshow")
+
 		for (let s = 0; s < slideContainers.length; s++) {
-			var cycle = slideContainers[s].dataset.cycle;
-			var slides = slideContainers[s].querySelectorAll('.slide')
-			var slideIndex = 0;
+			let cycle = slideContainers[s].dataset.cycle;
+			let slides = slideContainers[s].querySelectorAll('.slide')
+			let slideIndex = 0;
 			showSlides(slides, slideIndex, cycle);
 		};
 
-
 		function showSlides(slides, slideIndex, cycle) {
-		  for (i = 0; i < slides.length; i++) {
+
+		  for (let i = 0; i < slides.length; i++) {
 		    slides[i].style.display = "none";
 		  };
 		  slideIndex++;
-		  if (slideIndex > slides.length) {slideIndex = 1};
+
+		  if (slideIndex > slides.length) { slideIndex = 1 };
 		  slides[slideIndex - 1].style.display = "block";
-		  setTimeout(function() {
+
+		  setTimeout(() => {
 		  	showSlides(slides, slideIndex, cycle)
 		  }, 2500);
 		};
-
 	</script>
 </body>
